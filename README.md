@@ -74,8 +74,11 @@ Supports multiple environments (dev, staging, prod).
 🏁 Outcome
 
 ✅ Fully automated pipeline from code to production
+
 ✅ Reproducible and scalable Kubernetes deployment
+
 ✅ Demonstrated proficiency in modern DevOps tools
+
 ✅ Showcases skills in real-world end-to-end DevOps lifecycle
 
 👨‍💻 Author
