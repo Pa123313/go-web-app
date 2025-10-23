@@ -1,19 +1,97 @@
-# Go Web Application
+End-to-End DevOps Project on Golang Web Application
 
-This is a simple website written in Golang. It uses the `net/http` package to serve HTTP requests.
+Overview
 
-## Running the server
+This project demonstrates an End-to-End DevOps implementation for a Golang web application, covering everything from containerization to continuous delivery using modern DevOps tools and best practices.
 
-To run the server, execute the following command:
+The goal is to automate the entire lifecycle — from code commit to production deployment — using CI/CD pipelines, Kubernetes, Helm, and Argo CD.
 
-```bash
-go run main.go
-```
+🧩 Tech Stack & Tools Used
+Category	Tools/Technologies
+Programming Language	Go (Golang)
+Version Control	Git & GitHub
+CI/CD	GitHub Actions, Argo CD
+Containerization	Docker (Multi-stage builds)
+Orchestration	Kubernetes
+Packaging	Helm
+Networking / Routing	Ingress Controller
+Cloud / Infrastructure	Local / Cloud Kubernetes Cluster
+Monitoring & Sync	Argo CD UI
+Domain / DNS	Custom domain mapping for ingress
+🏗️ Project Architecture
+Developer → GitHub → GitHub Actions → Docker Image → Helm Chart → Argo CD → Kubernetes Cluster → Application
 
-The server will start on port 8080. You can access it by navigating to `http://localhost:8080/courses` in your web browser.
+Workflow Explanation:
 
-## Looks like this
+Code Commit: Push changes to GitHub repository.
 
-![Website](static/images/golang-website.png)
+CI Pipeline: GitHub Actions automatically triggers:
+
+Code quality checks.
+
+Docker image build using multi-stage Dockerfile.
+
+Push image to container registry.
+
+Update Helm chart with the new image tag.
+
+CD Pipeline: Argo CD detects changes and syncs automatically with the Kubernetes cluster.
+
+Deployment: Updated version is deployed seamlessly to the cluster.
+
+Access: Application is exposed via Ingress controller and DNS mapping.
+
+🐳 Containerization
+
+Implemented multi-stage Docker build for smaller, efficient images.
+
+Ensures build and runtime separation for better security and performance.
+
+⚙️ Continuous Integration (GitHub Actions)
+
+Automated pipeline triggers on each push.
+
+Jobs:
+
+✅ Build & Lint
+
+✅ Code Quality Check
+
+✅ Push Docker Image
+
+✅ Update Helm Chart Tag
+
+🚀 Continuous Delivery (Argo CD)
+
+Deployed via Argo CD for GitOps-based continuous delivery.
+
+Automatic synchronization between GitHub and Kubernetes cluster.
+
+Ensures production-grade deployment visibility and rollback capabilities.
+
+☸️ Kubernetes & Helm
+
+Kubernetes manifests and Helm charts created for:
+
+Deployment
+
+Service
+
+Ingress
+
+Supports multiple environments (dev, staging, prod).
+
+🏁 Outcome
+
+✅ Fully automated pipeline from code to production
+✅ Reproducible and scalable Kubernetes deployment
+✅ Demonstrated proficiency in modern DevOps tools
+✅ Showcases skills in real-world end-to-end DevOps lifecycle
+
+👨‍💻 Author
+
+Pavithra A S
+💼 DevOps Engineer
+📧 Pavithraannur1234@gmail.com
 
 
