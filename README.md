@@ -6,20 +6,18 @@ This project demonstrates an End-to-End DevOps implementation for a Golang web a
 
 The goal is to automate the entire lifecycle — from code commit to production deployment — using CI/CD pipelines, Kubernetes, Helm, and Argo CD.
 
-Tech Stack & Tools Used
+Tools Used
 
-Category	                 Tools/Technologies
-
-Programming Language	     Go (Golang)
-Version Control            Git & GitHub
-CI/CD	                     GitHub Actions, Argo CD
-Containerization	         Docker (Multi-stage builds)
-Orchestration	             Kubernetes
-Packaging	                 Helm
-Networking / Routing	     Ingress Controller
-Cloud / Infrastructure	   Local / Cloud Kubernetes Cluster
-Monitoring & Sync	         Argo CD UI
-Domain / DNS	             Custom domain mapping for ingress
+Go (Golang)
+Git & GitHub
+GitHub Actions, Argo CD        
+Docker (Multi-stage builds)
+Kubernetes
+Helm
+Ingress Controller
+Local / Cloud Kubernetes Cluster
+Argo CD UI
+Custom domain mapping for ingress
 
 🏗️ Project Architecture
 
