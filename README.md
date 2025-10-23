@@ -6,34 +6,33 @@ This project demonstrates an End-to-End DevOps implementation for a Golang web a
 
 The goal is to automate the entire lifecycle — from code commit to production deployment — using CI/CD pipelines, Kubernetes, Helm, and Argo CD.
 
-🧩 Tech Stack & Tools Used
-Category	Tools/Technologies
-Programming Language	Go (Golang)
-Version Control	Git & GitHub
-CI/CD	GitHub Actions, Argo CD
-Containerization	Docker (Multi-stage builds)
-Orchestration	Kubernetes
-Packaging	Helm
-Networking / Routing	Ingress Controller
-Cloud / Infrastructure	Local / Cloud Kubernetes Cluster
-Monitoring & Sync	Argo CD UI
-Domain / DNS	Custom domain mapping for ingress
+Tech Stack & Tools Used
+
+Category	                 Tools/Technologies
+
+Programming Language	     Go (Golang)
+Version Control            Git & GitHub
+CI/CD	                     GitHub Actions, Argo CD
+Containerization	         Docker (Multi-stage builds)
+Orchestration	             Kubernetes
+Packaging	                 Helm
+Networking / Routing	     Ingress Controller
+Cloud / Infrastructure	   Local / Cloud Kubernetes Cluster
+Monitoring & Sync	         Argo CD UI
+Domain / DNS	             Custom domain mapping for ingress
+
 🏗️ Project Architecture
+
 Developer → GitHub → GitHub Actions → Docker Image → Helm Chart → Argo CD → Kubernetes Cluster → Application
 
 Workflow Explanation:
 
 Code Commit: Push changes to GitHub repository.
-
 CI Pipeline: GitHub Actions automatically triggers:
-
-Code quality checks.
-
-Docker image build using multi-stage Dockerfile.
-
-Push image to container registry.
-
-Update Helm chart with the new image tag.
+* Code quality checks.
+* Docker image build using multi-stage Dockerfile.
+* Push image to container registry.
+* Update Helm chart with the new image tag.
 
 CD Pipeline: Argo CD detects changes and syncs automatically with the Kubernetes cluster.
 
@@ -50,6 +49,8 @@ Ensures build and runtime separation for better security and performance.
 ⚙️ Continuous Integration (GitHub Actions)
 
 Automated pipeline triggers on each push.
+
+<img width="1338" height="602" alt="github-actions-ci png" src="https://github.com/user-attachments/assets/82a7bc5c-5a69-47dd-a70f-d35429803e1d" />
 
 Jobs:
 
@@ -69,15 +70,17 @@ Automatic synchronization between GitHub and Kubernetes cluster.
 
 Ensures production-grade deployment visibility and rollback capabilities.
 
+<img width="1137" height="635" alt="argo-cd-dashboard png" src="https://github.com/user-attachments/assets/a47ac477-9f38-4a63-b0a4-19803467edf9" />
+
 ☸️ Kubernetes & Helm
 
 Kubernetes manifests and Helm charts created for:
 
-Deployment
+* Deployment
 
-Service
+* Service
 
-Ingress
+* Ingress
 
 Supports multiple environments (dev, staging, prod).
 
