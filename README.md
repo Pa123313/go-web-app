@@ -1,4 +1,4 @@
-End-to-End DevOps Project on Golang Web Application
+🚀 End-to-End DevOps Project on Golang Web Application
 
 Overview
 
@@ -6,7 +6,7 @@ This project demonstrates an End-to-End DevOps implementation for a Golang web a
 
 The goal is to automate the entire lifecycle — from code commit to production deployment — using CI/CD pipelines, Kubernetes, Helm, and Argo CD.
 
-Tools Used
+🧩 Tools Used
 
 Go (Golang)
 Git & GitHub
@@ -33,9 +33,7 @@ CI Pipeline: GitHub Actions automatically triggers:
 * Update Helm chart with the new image tag.
 
 CD Pipeline: Argo CD detects changes and syncs automatically with the Kubernetes cluster.
-
 Deployment: Updated version is deployed seamlessly to the cluster.
-
 Access: Application is exposed via Ingress controller and DNS mapping.
 
 🐳 Containerization
