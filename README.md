@@ -8,16 +8,7 @@ The goal is to automate the entire lifecycle — from code commit to production 
 
 🧩 Tools Used
 
-Go (Golang)
-Git & GitHub
-GitHub Actions, Argo CD        
-Docker (Multi-stage builds)
-Kubernetes
-Helm
-Ingress Controller
-Local / Cloud Kubernetes Cluster
-Argo CD UI
-Custom domain mapping for ingress
+Go (Golang), Git & GitHub, GitHub Actions, Argo CD, Docker (Multi-stage builds), Kubernetes, Helm, Ingress Controller, Local / Cloud Kubernetes Cluster, Argo CD UI and Custom domain mapping for ingress
 
 🏗️ Project Architecture
 
